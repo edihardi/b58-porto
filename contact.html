@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <img src="/assets/img/logo.png" alt="logo" width="48" height="48" />
+        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/project.html">My Project</a></li>
+        <li><a href="/contact.html" class="nav-contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-form">
+      <form>
+        <h1>GET IN TOUCH</h1>
+        <div class="inp-contact">
+          <label for="name">Name</label>
+          <input type="text" />
+        </div>
+        <div class="inp-contact">
+          <label for="email">Email</label>
+          <input type="email" />
+        </div>
+        <div class="inp-contact">
+          <label for="phone">Phone Number</label>
+          <input type="number" />
+        </div>
+        <div class="inp-contact">
+          <label for="tech">Techstack</label>
+          <select name="Techstack">
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
+          </select>
+        </div>
+        <div class="inp-contact">
+          <label for="message">Your Message</label>
+          <textarea name="message"></textarea>
+        </div>
+        <div class="btn-submit">
+          <button class="contact">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
