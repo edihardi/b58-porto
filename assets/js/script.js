@@ -1,12 +1,14 @@
 function sendToMail(event) {
   event.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const techStack = document.getElementById("techstack").value;
-  const message = document.getElementById("message").value;
+  const inputName = document.getElementById("name").value;
+  const inputEmail = document.getElementById("email").value;
+  const inputPhone = document.getElementById("phone").value;
+  const inputTechStack = document.getElementById("techstack").value;
+  const inputMessage = document.getElementById("message").value;
 
   const a = document.createElement("a");
-  a.href = `mailto:${email}?subject=${techStack}&body=${message}`;
+  a.href = `mailto:edihardiansyahh@gmail.com?subject=${inputTechStack}&body=${inputMessage}`;
   a.click();
+
+  console.log(a);
 }

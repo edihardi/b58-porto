@@ -17,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <script src="/assets/js/script.js"></script>
     <title>Personal Website</title>
   </head>
   <body>
@@ -39,19 +38,19 @@
         <h1>GET IN TOUCH</h1>
         <div class="inp-contact">
           <label for="name">Name</label>
-          <input type="text" id="name" required />
+          <input type="text" id="inputName" required />
         </div>
         <div class="inp-contact">
           <label for="email">Email</label>
-          <input type="email" id="email" required />
+          <input type="email" id="inputEmail" required />
         </div>
         <div class="inp-contact">
           <label for="phone">Phone Number</label>
-          <input type="number" id="phone" required />
+          <input type="number" id="inputPhone" required />
         </div>
         <div class="inp-contact">
           <label for="tech">Techstack</label>
-          <select name="Techstack" id="techstack">
+          <select name="Techstack" id="inputTechstack">
             <option value="Frontend Developer">Frontend Developer</option>
             <option value="Backend Developer">Backend Developer</option>
             <option value="Fullstack Developer">Fullstack Developer</option>
@@ -59,12 +58,13 @@
         </div>
         <div class="inp-contact">
           <label for="message">Your Message</label>
-          <textarea name="message" id="message" required></textarea>
+          <textarea name="message" id="inputMessage" required></textarea>
         </div>
         <div class="btn-submit">
-          <button class="contact" id="submit">Submit</button>
+          <button class="contact" type="submit">Submit</button>
         </div>
       </form>
     </div>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
