@@ -1,10 +1,10 @@
 function sendToMail(event) {
   event.preventDefault();
-  const inputName = document.getElementById("name").value;
-  const inputEmail = document.getElementById("email").value;
-  const inputPhone = document.getElementById("phone").value;
-  const inputTechStack = document.getElementById("techstack").value;
-  const inputMessage = document.getElementById("message").value;
+  const inputName = document.getElementById("inputName").value;
+  const inputEmail = document.getElementById("inputEmail").value;
+  const inputPhone = document.getElementById("inputPhone").value;
+  const inputTechStack = document.getElementById("inputTechstack").value;
+  const inputMessage = document.getElementById("inputMessage").value;
 
   const a = document.createElement("a");
   a.href = `mailto:edihardiansyahh@gmail.com?subject=${inputTechStack}&body=${inputMessage}`;
