@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="/assets/js/script.js"></script>
     <title>Personal Website</title>
   </head>
   <body>
@@ -26,29 +27,31 @@
           <img src="/assets/img/logo.png" alt="logo" width="48" height="48" />
         </li>
         <li><a href="/">Home</a></li>
-        <li><a href="/project.html">My Project</a></li>
-        <li><a href="/contact.html" class="nav-contact">Contact Me</a></li>
+        <li><a href="/project.html">Project</a></li>
+        <li class="nav-contact">
+          <a href="/contact.html">Contact Me</a>
+        </li>
       </ul>
     </nav>
 
     <div class="contact-form">
-      <form>
+      <form onsubmit="sendToMail(event)">
         <h1>GET IN TOUCH</h1>
         <div class="inp-contact">
           <label for="name">Name</label>
-          <input type="text" />
+          <input type="text" id="name" required />
         </div>
         <div class="inp-contact">
           <label for="email">Email</label>
-          <input type="email" />
+          <input type="email" id="email" required />
         </div>
         <div class="inp-contact">
           <label for="phone">Phone Number</label>
-          <input type="number" />
+          <input type="number" id="phone" required />
         </div>
         <div class="inp-contact">
           <label for="tech">Techstack</label>
-          <select name="Techstack">
+          <select name="Techstack" id="techstack">
             <option value="Frontend Developer">Frontend Developer</option>
             <option value="Backend Developer">Backend Developer</option>
             <option value="Fullstack Developer">Fullstack Developer</option>
@@ -56,10 +59,10 @@
         </div>
         <div class="inp-contact">
           <label for="message">Your Message</label>
-          <textarea name="message"></textarea>
+          <textarea name="message" id="message" required></textarea>
         </div>
         <div class="btn-submit">
-          <button class="contact">Submit</button>
+          <button class="contact" id="submit">Submit</button>
         </div>
       </form>
     </div>

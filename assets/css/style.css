@@ -12,6 +12,7 @@ body {
 
 nav {
   background-color: #f4f3f3;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.03);
 }
 
 ul {
@@ -27,6 +28,12 @@ li {
 }
 
 .nav-contact {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-contact a {
   background-color: black;
   color: white;
   border-radius: 10px;
@@ -44,7 +51,7 @@ li {
   margin: 20px auto;
   padding: 50px 0;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .description {
@@ -80,7 +87,7 @@ li {
   text-align: center;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .profile img {
@@ -120,6 +127,7 @@ form h1 {
 label {
   display: block;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 input,
@@ -134,7 +142,7 @@ textarea {
 }
 
 textarea {
-  padding: 30px 0;
+  height: 100px;
 }
 
 .btn-submit {
