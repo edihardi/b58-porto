@@ -10,6 +10,8 @@ body {
   background-color: #e3e7eb;
 }
 
+/* NAVIGATION */
+
 nav {
   background-color: #f4f3f3;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.03);
@@ -41,6 +43,8 @@ li {
   margin: 15px 0;
 }
 
+/* CARD/BODY */
+
 .container {
   background-color: white;
   display: flex;
@@ -66,6 +70,7 @@ li {
   background-color: black;
   color: white;
   border-radius: 20px;
+  border: none;
   padding: 7px 15px;
   margin: 15px 0;
   cursor: pointer;
@@ -106,6 +111,8 @@ span h3 {
   padding-bottom: 15px;
 }
 
+/* CONTACT */
+
 .contact-form {
   display: flex;
   justify-content: center;
@@ -124,7 +131,7 @@ form h1 {
   margin: 20px 0;
 }
 
-label {
+.inp-contact label {
   display: block;
   font-weight: 600;
   margin-bottom: 5px;
@@ -148,4 +155,143 @@ textarea {
 .btn-submit {
   margin-top: -20px;
   text-align: end;
+}
+
+/* Add Project Page */
+.post-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 50px 0;
+}
+
+.post-project h1 {
+  margin-bottom: 20px;
+}
+
+.post-project label {
+  margin-bottom: 7px;
+}
+
+.form-project {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.form-project,
+.date label {
+  font-weight: 500;
+}
+
+.date {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+  margin: 20px 0;
+}
+
+.technologies {
+  width: 400px;
+  display: flex;
+  gap: 30px;
+}
+
+.technologies input {
+  box-shadow: none;
+  padding: 0;
+}
+
+.nodejs,
+.reactjs,
+.nextjs,
+.typescript,
+.vue,
+.angular {
+  display: flex;
+  gap: 7px;
+}
+
+#nodejs,
+#reactjs,
+#nextjs,
+#typescript,
+#vue,
+#angular {
+  width: auto;
+}
+
+/* Show Project */
+.my-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 50px 0;
+}
+
+.project {
+  background-color: white;
+  width: 25%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project img.hero {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.desc-project {
+  margin: 15px;
+}
+
+.desc-project p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.icon-stack {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-stack img {
+  width: 32px;
+}
+
+.project button {
+  display: block;
+  width: 100%;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-edit {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 7px 15px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 7px 15px;
+  margin: 15px 0;
+  cursor: pointer;
 }
